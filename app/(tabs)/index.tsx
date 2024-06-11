@@ -2,9 +2,16 @@ import {useState} from 'react'
 import {View, Text, StyleSheet, Image, TouchableOpacity} from 'react-native'
 import Slider from "@react-native-community/slider"
 
+
+let charset = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890"
+
+
 export default function App(){
     const [size, setSize] = useState(10)
 
+    function generatePassword(){
+      console.log("CLICOOOOU")
+    }
 
 
   return(
@@ -30,7 +37,7 @@ export default function App(){
       </View>
 
 
-      <TouchableOpacity style={styles.button}>
+      <TouchableOpacity style={styles.button} onPress={generatePassword}>
         <Text style={styles.buttonText}>Gerar senha</Text>
       </TouchableOpacity>
 
