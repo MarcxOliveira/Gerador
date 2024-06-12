@@ -15,8 +15,8 @@ export function ModalPassword(){
                     <Text style={styles.buttontext}>Voltar</Text>
                   </TouchableOpacity>
 
-                  <TouchableOpacity style={styles.button}>
-                    <Text style={styles.buttontext}>Salvar senha</Text>
+                  <TouchableOpacity style={[styles.button, styles.buttonSave]}>
+                    <Text style={styles.buttonSaveText}>Salvar senha</Text>
                   </TouchableOpacity>
                 </View>
 
@@ -65,6 +65,12 @@ const styles = StyleSheet.create({
         justifyContent: 'space-between'
     },
     button:{
-        flex:1
+        flex:1,
+        alignItems: 'center ',
+        marginTop: 14,
+        marginBottom: 14
+    },
+    buttonSave:{
+        backgroundColor: "#392DE9"
     }
 })
