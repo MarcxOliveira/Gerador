@@ -9,7 +9,7 @@ let charset = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890"
 
 export default function App(){
     const [size, setSize] = useState(10)
-    const [passowrdValue, setPasswordValue] = useState("")
+    const [passwordValue, setPasswordValue] = useState("")
     const [modalVisible, setModalVisible] = useState(false);
 
 
@@ -53,7 +53,7 @@ export default function App(){
       </TouchableOpacity>
 
       <Modal visible={modalVisible} animationType="fade" transparent={true} >
-        <ModalPassword/>
+        <ModalPassword password={passwordValue} handleClose={ () => setModalVisible(false) } />
       </Modal>
 
     </View>

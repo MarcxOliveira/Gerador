@@ -66,11 +66,17 @@ const styles = StyleSheet.create({
     },
     button:{
         flex:1,
-        alignItems: 'center ',
+        alignItems: 'center',
         marginTop: 14,
-        marginBottom: 14
+        marginBottom: 14,
+        padding: 8
     },
     buttonSave:{
-        backgroundColor: "#392DE9"
+        backgroundColor: "#392DE9",
+        borderRadius: 8
+    },
+    buttonSaveText:{
+        color: "#FFF",
+        fontWeight: 'bold'
     }
 })
